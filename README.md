@@ -1,8 +1,8 @@
 # CAKD7 : 중앙 K-Digital Training 7기 "빅데이터 기반 AI 응용 솔루션 개발자 전문과정"
 
 ---
-m1. Programming
-m2. 분석라이브러리 활용
+<br>m1. Programming</br>
+<br>m2. 분석라이브러리 활용</br>
 m3. 통계
 m4. 선형대수
 m5. 데이터베이스 구축 및 활용
