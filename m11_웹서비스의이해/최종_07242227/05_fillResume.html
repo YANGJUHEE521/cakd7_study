@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  body {
+    position: relative;
+  }
+  ul.nav-pills {
+    top: 20px;
+    position: fixed; /*안움직이게 고정*/
+
+  }
+  div.col-sm-9 div { /*col-sm-9 에서 div 에 설정*/
+    height: 500px; 
+    font-size:x-large;
+    margin-top:5px;
+  }
+
+  a { color: rgb(110, 156, 110);
+        }
+
+  .logo{
+    margin-bottom: 30px;
+  }
+
+  .container_table{
+    display: inline; /*테이블 줄이 네모 안에만 있어야하니까. 넘어가면 안됌*/
+  }
+
+  .titles {
+    padding-top: 10px;
+    padding-left: 5px;
+    font-weight: bold;
+  }
+
+  .profile_img{
+      margin-bottom: 20px;
+      margin-right: 50px;
+    }
+
+  #button1{
+    float: right;
+    width: 200px;
+  }
+
+  #button2{
+    margin-bottom: 30px;
+  }
+
+  .attitude{
+    display: inline-block;
+    background-color: rgba(193, 198, 201, 0.511);
+    border-radius: 20px;
+    margin-left: 20px;
+  }
+
+  .form-control{
+    width: 450px;
+    margin: 10px;
+    text-align: center;
+  }
+
+  #intro_input{
+    height: 150px;
+    width: 600px;
+    scroll-behavior: smooth;
+  }
+
+  #comp{
+    display: block;
+  }
+
+  #section1 {color: #fff; background-color: rgba(163, 204, 163); padding-left: 10px;}
+  #section2 {color: #fff; background-color: rgb(110, 156, 110); padding-left: 10px;}
+  #section3 {color: #fff; background-color: rgba(163, 204, 163); padding-left: 10px;}
+
+  
+  @media screen and (max-width: 810px) { /*스마트폰 크기로 작아졌을때 반응*/
+    #section1, #section2, #section3  {
+      margin-left: 120px;
+    }
+    ul.nav-pills {
+      width: 110px;
+      font-size:small
+    }
+
+    div.col-sm-9 div { /*col-sm-9 에서 div 에 설정*/
+    font-size:small;
+    height: 350px; 
+    }
+
+    .logo {
+      width: 120px;
+      margin-bottom: 10px;
+    }
+
+    .profile_img{
+      width: 100px;
+      margin-bottom: 10px;
+      margin-right: 30px;
+    }
+
+    #button1{
+    float: right;
+    width: 80px;
+    }
+
+    .form-control{
+    width: 150px;
+  }
+
+  #intro_input{
+    height: 50px;
+    width: 300px;
+    scroll-behavior: smooth;
+  }
+
+  }
+  </style>
+
+
+</head>
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="35">
+
+<div class="container">
+  <div class="row">
+    <nav class="col-sm-3" id="myScrollspy">
+      <ul class="nav nav-pills nav-stacked">
+        <img class="logo" src="./image/logo.png" alt="logo" width="200px">
+        <li class="active"><a href="#section1">개인정보</a></li>
+        <li><a href="#section2">자기 소개서</a></li>
+        <li><a href="#section3">경력사항</a></li>
+      </ul>
+    </nav>
+    <div class="col-sm-9">
+      <div id="section1">    
+        <h1 class="titles">개인정보</h1>
+          <span><img class="profile_img" src="https://ext.fmkorea.com/files/attach/new/20200715/44021718/47826706/2990579787/c31525d5cd3804e287eead51f8c8e7a4.jpeg" alt="profile" width="200px"></span>    
+          <span>나문희</span>
+          <span>(80세,여)</span>
+          <button id="button1" type="button" class="btn btn-success">수정하기</button>
+        <div class="container_table">
+          <table class="table">
+            <tbody>
+              <tr>
+                <th scope="row">연락처</th>
+                <th scope="row">01021167544</th>
+              </tr>
+              <tr>
+                <th scope="row">생년월일</th>
+                <th scope="row">1941년 11월 30일</th>
+              </tr>
+              <tr>
+                <th scope="row">거주지</th>
+                <td>서울특별시 종랑구 봉우재로 20가길 49 502호</td>
+              </tr>
+              <tr>
+                <th scope="row">학력</th>
+                <td>서울대학교 졸업</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+  
+      </div>
+
+
+      <div id="section2"> 
+        <h1 class="titles">자기 소개서</h1>
+        <p>나의 성격/장점</p>
+        <button id="button1" type="button" class="btn btn-success">수정하기</button>
+        <input  id="input1" type="text" class="form-control" placeholder="키워드 직접 입력" aria-label="Recipient's username" aria-describedby="button-addon2">
+        <button id="button2" class="btn btn-success" type="button" id="button-addon2">등록</button>
+        <p class="attitude">밝음</p> <!--위치때문에 밑에 애들이랑 같이 나란히 있게끔-->
+        <span class="attitude">성실함</span>
+        <span class="attitude">지각 없음</span>
+        <p>본인 소개</p>
+        <div>
+          <input id="intro_input" type="text" class="form-control" placeholder="본인소개" aria-label="Recipient's username" aria-describedby="button-addon2">
+          <button id="button2" class="btn btn-success" type="button" id="button-addon2">맞춤법 검사</button>
+        </div>
+      </div>        
+
+
+      <div id="section3">         
+        <h1 class="titles">경력사항</h1>
+        <button id="button1" type="button" class="btn btn-success">수정하기</button>
+        <button id="button1" type="file" class="btn btn-warning">파일 선택</button>
+        <p>회사명</p>
+        <input id="comp" type="text" class="form-control" placeholder="회사명" aria-label="Recipient's username" aria-describedby="button-addon2">
+        <p>근무 기간</p>
+        <input id="worktime"  type="text" class="form-control" placeholder="근무 기간" aria-label="Recipient's username" aria-describedby="button-addon2">
+        <p>담당 업무</p>
+        <input id="intro_input" type="text" class="form-control" placeholder="담당 업무" aria-label="Recipient's username" aria-describedby="button-addon2">
+        <button class="btn btn-success" type="button" id="button-addon2">등록</button>
+      </div>     
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

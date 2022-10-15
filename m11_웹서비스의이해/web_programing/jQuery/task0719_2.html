@@ -1,0 +1,52 @@
+<!-- jquery 플러그인을 사용한 사례를 작성하여 출력하세요. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src = 'https://code.jquery.com/jquery-3.4.1.js'></script>
+    <link rel="stylesheet" href="progress-bar.css" />
+    <script src="jquery.min.js"></script>
+    <script src="progress-bar.js"></script>
+    <title>Document</title>
+
+    <script>
+        $(document).ready(function(){
+            $(".progress-bar").ProgressBar();
+        });
+    </script>
+</head>
+<body>
+    
+    <div class="progress-bar">
+        <div class="progress" 
+             data-percent="60" 
+             data-color="green">
+             
+             <span>HTML  60%</span>
+        </div>
+      </div>
+      <div class="progress-bar">
+        <div class="progress" 
+             data-percent="80" 
+             data-color="cornflowerblue">
+             
+             <span>CSS  80%</span>
+        </div>
+      </div>
+      <div class="progress-bar">
+        <div class="progress" 
+             data-percent="20" 
+             data-color="pink">
+             
+             <span>js  20%</span>
+        </div>
+      </div>
+      <div class="progress-bar">
+        <div class="progress" 
+             data-percent="40" 
+             data-color="purple">
+             
+             <span>jquery  40%</span>
+        </div>
+      </div>
+</body>
+</html>

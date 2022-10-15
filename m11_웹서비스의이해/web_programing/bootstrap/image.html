@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" >
+    <style>
+        .b{
+            border: solid 1px black;
+        }
+    </style>
+</head>
+<body>
+    <!-- container-fluid가 아니여서 실행해보면 width 100%는 아니야 -->
+    <div class="container">
+
+        <div class="row">
+            
+            <div class="col-md-4 b">
+                <!-- 부트스트랩의 이미지는 .img-fluid. max-width: 100%;상위 요소 와 height: auto;함께 크기가 조정되도록 이미지에 적용됩니다. -->
+                <img class="img-fluid" src="image/puppy.jpg" alt="puppy"></img>
+            </div>
+            <div class="col-md-4 b">
+                <!--사진이 정사각형이면 이쁜 동그라미로 나옴  -->
+                <img class="img-fluid rounded-circle" src="image/puppy2.jpg" alt=""></img>
+            </div>
+            <div class="col-md-4 b">
+                <!-- 이미지에 둥근 1px 테두리 모양을 부여 -->
+                <img class="img-fluid img-thumbnail " src="image/puppy2.jpg" alt=""></img>
+            </div>
+        </div>
+
+
+
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" ></script>
+</body>
+</html>

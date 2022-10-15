@@ -1,0 +1,84 @@
+<!--주어진 요구사항에 대하여 완성하세요. p.439  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+    <style>
+        div.item:nth-child(1) {background: blueviolet;}
+        div.item:nth-child(2) {background: pink;}
+        div.item:nth-child(3) {background: burlywood;}
+    </style>
+    <script src = 'https://code.jquery.com/jquery-3.4.1.js'></script>
+    <script>
+        $(document).ready(function () {
+            var width = $('[data-role="slider"]').attr('data-width');
+            var height = $('[data-role="slider"]').attr('data-height');
+            var count = $('[data-role="slider"] div.item').length;
+
+            $('[data-role="slider"]').css({
+                position :'relative',
+                overflow : 'hidden',
+                width: width,
+                height: height
+                // 요소.find(하위 요소 중 특정 요소) 는 어떤 요소의 하위 요소 중 특정 요소를 찾을 때 사용합니다.
+            }).find('.container').css({  
+                position: 'absolute',
+                width: count * width,
+                overflow: 'hidden'
+            }).find('.item').css({
+                width:width,
+                height:height,
+                float:'left'
+            });
+
+            var currentPage = 0;
+            var changePage = function() {
+                $('[data-role="slider"] > .container').animate({
+                    left: -currentPage * width
+                }, 500);
+            };
+
+            $('#left-button').click(function() {
+                if (currentPage > 0) {
+                    currentPage = currentPage - 1;
+                    changePage();
+                }
+            });
+
+            $('#right-button').click(function() {
+                if (currentPage < count -1) {
+                    currentPage = currentPage + 1;
+                    changePage();
+                }
+            });
+            
+
+        });
+    </script>
+</head>
+<body>
+    <div data-role ="slider" data-width="500" data-height="300">
+        <div class="container">
+            <div class="item">
+                <h1>Lorem ipsum dolor sit amet</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+            </div>
+            <div class="item">
+                <h1>Lorem ipsum dolor sit amet</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                
+            </div>
+            <div class="item">
+                <h1>Lorem ipsum dolor sit amet</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                
+            </div>
+        </div>
+    </div>
+    <button id="left-button">←</button>
+    <button id="right-button">→</button>
+</body>
+</html>

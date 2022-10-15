@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script src = 'https://code.jquery.com/jquery-3.4.1.js'></script>
+
+    <script>
+        $(document).ready(function () {
+            $('img').attr({
+                alt:'어쩌고 저쩌고',
+                src: function (index) {
+                    var size = (index + 1) * 100;
+
+                    return 'http://placehold.it/' + size + 'x100';
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <img>
+    <img>
+    <img>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!-- 함수를 이용해 속성을 지정하는 사례를 작성해서 출력하세요. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+    <script src = 'https://code.jquery.com/jquery-3.4.1.js'></script>
+    <script>
+        // 이벤트 연결
+        $(document).ready(function() {
+            $('img').attr({
+                alt: '만두 사진',
+                src : 'mandoo.jpg',  
+                // width, height 객체에서 함수 이용하여 속성 지정
+                // 객체의 인덱스를 차례대로 index에 전달
+                width: function(index) {
+                 var size = (index + 1) * 100;
+
+                 return size;
+                },
+
+                height: function(index) {
+                 var size = (index + 1) * 100;
+
+                 return size;
+                }
+            });
+
+        });
+    </script>
+</head>
+<body>
+    <img>
+    <img>
+    <img>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!-- 조건문(if, elseif, else)을 사용하여 예산(100만원)을 감안한 다양한 시나리오의 쇼핑계획을 작성하세요. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <script>
+    var money = 1000000;
+    var wishlist = {
+        딥디크: 205000,
+        바이레도: 191000,
+        COS: 235000,
+        나투시: 185000,
+        IAB: 289000,
+        아이패드: 677770,
+        에어팟맥스:542000,
+        슈프림:152000
+    };
+
+    var over = 0;
+
+    for (var i in wishlist) {
+        over += wishlist[i];
+        
+        if (over > money){
+            var cha = over - money;
+                
+        }
+    }
+    alert(cha + '만큼의 금액을 초과했습니다.')
+   </script>
+    <title>조건문</title>
+</head>
+<body>
+    
+</body>
+</html>

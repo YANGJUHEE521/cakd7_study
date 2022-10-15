@@ -1,0 +1,51 @@
+<!-- 반응형 웹패턴 4가지 경우를 구현하세요. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="user-scalable=no, initial-scale=1,maximum=1">
+    <title>패턴4: 데스크톱 메뉴 오른쪽, 모바일 장치 메뉴 아래쪽</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            width: 960px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        #menu {width: 260px; float: right;}
+        #section{width: 700px; float: left;}
+
+        li {list-style: none;}
+
+        @media screen and (max-width: 767px) {
+            body{width: auto;}
+            #menu {width: auto; float: none;}
+            #section {width: auto; float: none;}
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div id ='menu'>
+        <ul>
+            <li>COFFEE</li>
+            <li>MENU</li>
+            <li>STORE</li>
+            <li>WHAT'S NEW</li>
+        </ul>
+    </div>
+    
+    <div id="section">
+        <h1>스타벅스 소개</h1>
+        <p>오늘날 스타벅스는 전세계 각국에서 수만여 명의 파트너들이 근무하는 세계 최고의 커피 전문 회사로,
+            최상급 아라비카 원두의 윤리적 구매와 50년 이상의 전문적인 로스팅 기술을 통한 철저한 품질 관리와 기업의 사회적 책임 완수를 통해
+            특별한 스타벅스의 경험과 문화를 한 잔의 커피와 함께 제공하며, 각 국의 커피 문화를 선도하고 있습니다.</p>
+    </div>
+</body>
+</html>

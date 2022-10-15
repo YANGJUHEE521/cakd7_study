@@ -1,0 +1,122 @@
+<!-- 교재 종합예제 1(p.117)을 기반으로 html 종합문제를 수행하세요(응용 대환영) -->
+<!-- 포털사이트 만드는 거 하자  -->
+
+
+<!-- p.169 그 .box안 써도 되고, id = 'box' 해서 써주면됨 id 다르게 해서  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {background-color: #E9D5CA;}
+        
+        #main {color: #363062;
+            font-size: 3em;
+            font-style: italic;
+            font-weight: bold;}
+        
+        #yesterday {color: #4D4C7D;
+        font-size: 1.8em;
+        font-style: italic;
+        font-weight: bold;}
+
+        #mainnews {border-radius: 30px;}
+
+        #n1 > td > a {color: white;
+        background-color: #363062;
+        font-weight: bold;
+        width: 100px; height: 100px;
+        }
+        /* #n1 td > div > a {padding:20px 20px}  */
+
+        #n2 > td > a {color: white;
+        background-color: #4D4C7D;
+        font-weight: bold;
+        width: 100px; height: 100px;}
+
+        #n3 > td > a {color: white;
+        background-color: #827397;
+        font-weight: bold;
+        width: 100px; height: 100px;}
+    </style>
+    
+    <title>YJH NEWS</title>
+
+</head>
+
+<body>
+    <div id = 'page-wrapper'> <!-- 전체를 감싸는 태그 -->
+        <div>
+            <header>                       
+                <center>         
+                        <td><h1 id = main header>YJH NEWS</h1></td>
+                </center>
+                <center>       
+                        <table>    
+                            <tr>
+                                <form>
+                                    <td><input id='search' type="text"></td>
+                                    <td><input type="submit" value="검색"></td>
+                                </form>
+                            </tr>
+                        </table>   
+                </center>
+            </header>
+        </div>
+        <nav id='navigation'>
+            <center>
+                <p id = yesterday header> yesterday's news </p>
+            </center>
+        </nav>
+
+        <div id="content">
+            <section id="section">
+                <article>
+                    <center>
+                        <a href="https://www.ytn.co.kr/replay/view.php?idx=11&key=54009" width="10" height="15" target="_blank">
+                            <img id = mainnews src="main news.jpg" alt="위의 이미지를 누르면 연결됩니다.">
+                        <a>
+                    </center>
+
+                    <center>
+                        <table>
+
+                            <tr id="n1">
+                                 <td><a href="https://n.news.naver.com/mnews/article/081/0003286704?sid=100">정치</a></td>
+                                 <td><a href="https://n.news.naver.com/mnews/article/003/0011300696?sid=101">경제</a></td>
+                                 <td><a href="https://n.news.naver.com/mnews/article/081/0003286686?sid=102">사회</a></td>
+                            </tr>      
+
+                            <tr id="n2">
+                                 <td><a href="https://n.news.naver.com/mnews/article/052/0001763274?sid=103">생활/문화</a></td>
+                                 <td><a href="https://n.news.naver.com/mnews/article/003/0011300634?sid=105">IT/과학</a></td>
+                                 <td><a href="https://n.news.naver.com/mnews/article/003/0011298651?sid=104">세계</a></td>
+                            </tr>
+
+                            <tr id="n3">
+                                 <td><a href="https://n.news.naver.com/mnews/article/015/0004723503?sid=110">오늘의사설</a></td>
+                                 <td><a href="https://n.news.naver.com/mnews/article/008/0004770033?sid=110">오늘의칼럼</a></td>
+                                 <td><a href="https://news.naver.com/main/ranking/popularDay.naver?mid=etc&sid1=111">랭킹</a></td>
+                            </tr>
+
+                        </table>
+                    </center>
+
+                </article>
+            </section>
+
+            
+
+            <footer>
+                <h2><a href="#">ITC Cookbook HTML5 Programming</a></h2>
+            </footer>
+
+        </div>
+    
+    </div>
+    
+        
+
+    
+    
+</body>
+</html>

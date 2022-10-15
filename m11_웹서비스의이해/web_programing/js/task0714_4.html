@@ -1,0 +1,35 @@
+<!-- 객체 속성의 자료형을 여러가지로 하고, 특히 함수도 포함한 사례를 작성하세요. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title> 속성과 메서드 </title>
+
+    <script>
+        
+        var shopping = {
+            핸드크림: 20000,
+            향수: 40000,
+            이불: 50000,
+            영양제: 13000,
+            마우스: 37000
+        };
+        
+        function calculation(x){
+            
+            var sum = 0;
+
+            for(var i in x) {
+                sum += x[i];
+            }
+
+            return sum;
+        }
+
+        alert(calculation(shopping));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

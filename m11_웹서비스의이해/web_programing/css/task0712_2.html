@@ -1,0 +1,59 @@
+<!-- id를 다양하게 생성하여, 다양한 스타일을 적용하여 구현하세요.(cf. 131p) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        #header {background-color: #5F7161;
+        color: white;
+        font-style: italic;
+        font-weight: bold;
+    width: 220px;}
+    #tr1 {background-color: #6D8B74;}
+    #tr2 {background-color: #EFEAD8;}
+    #tr3 {background-color: #D0C9C0;}
+    #tr4 {background-color: #E5E3C9;}
+
+    th, td {
+  text-align: center;
+}
+
+    </style>
+    
+    <title>coloful table</title>
+
+</head>
+<body>
+    <center>
+        <span><h1 id = header>Colorful table</h1></span>
+        <hr>
+        <table border="2">
+            <tr id = tr1>
+                <th>INPUT</th>
+                <th>USE</th>
+                <th>RETURN</th>
+            </tr>
+            <tr id = tr2>
+                <td>시리즈 원소</td>
+                <td rowspan="2">apply</td>
+                <td>단일 값, 시리즈</td>
+            </tr>
+
+            <tr id = tr2>
+                <td>시리즈 객체 <br> (데이터 프레임의 행 or 열) </td>
+                <td> 단일 값, 시리즈, 데이터 프레임(통합)</td>
+            </tr>
+        
+            <tr id = tr3>
+                <td>데이터 프레임의 원소</td>
+                <td>applymap</td>
+                <td>(동일한 형태의) 데이터 프레임</td>
+            </tr>
+            <tr id = tr4>
+                <td>데이터 프레임의 객체</td>
+                <td>pipe</td>
+                <td>단일 값, 시리즈, 데이터 프레임</td>
+            </tr>
+        </table>
+    </center>
+</body>
+</html>

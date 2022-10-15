@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Document</title>
+    <script>
+        window.onload = function () {
+            var output = '';
+
+            for (var i = 0; i < 256; i ++) {
+                output += '<div></div>'
+            }
+            //innerHTML - 문서 객체 내부 글자의 HTML 태그를 반영해 가져오도록 변경  
+            document.body.innerHTML = output;
+
+            var divs = document.querySelectorAll('div');
+
+            for (var i = 0; i < divs.length; i++) {
+                var div = divs[i];
+
+                div.style.height = '2px';
+                div.style.background = 'rgb(' + i  +',' + i + ',' + i + ')';
+            }
+
+        };
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+
+        .btn {
+            background-color: #B5D692;
+        }
+        
+        img {
+            float: left;
+        }
+        
+        #tophead {
+            
+            overflow: hidden;
+            background-color: #B5D692;
+            
+        }
+
+        #choose {
+            color: #728f72;
+        }
+        
+        .list-group-item:hover {color: #728f72;}
+       
+        .accordion-button:hover {background-color: #B5D692;}
+
+        
+    </style>
+
+</head>
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+              <img src="./image/logo.png" width="40" height="40" class="d-inline-block align-top" alt="" loading="lazy">
+            </a>
+          </nav>
+        <div id="tophead">
+            
+            <center><h4 id="toptitle"><strong>지역, 직무, 근무형태를 선택해주세요.</strong></h4></center>
+            
+        </div>
+        <hr>
+        <div>
+            <p id="choose">
+                <strong>1. 지역을 선택해주세요.</strong>
+            </p>
+        </div>
+        
+        <div class="accordion" id="regionAccordion">
+            <div class="accordion-item">
+            <h2 class="accordion-header" id="regionHead1">
+                <button class="accordion-button text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#regionCollapse1" aria-expanded="true" aria-controls="regionCollapse1">
+                서울
+                </button>
+            </h2>
+            <div id="regionCollapse1" class="accordion-collapse collapse show " aria-labelledby="regionHead1" data-bs-parent="#regionAccordion">
+                <div class="accordion-body">
+                    <div data-spy="scroll" data-target="#regionHead1" data-offset="10"
+                    style="height:200px;overflow-y: scroll;padding:5px; border: 1px solid #8ea58e;">
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action">강북구</a>
+                        <a href="#" class="list-group-item list-group-item-action">광진구</a>
+                        <a href="#" class="list-group-item list-group-item-action">노원구</a>
+                        <a href="#" class="list-group-item list-group-item-action">동작구</a>
+                        <a href="#" class="list-group-item list-group-item-action">서초구</a>
+                        <a href="#" class="list-group-item list-group-item-action">송파구</a>
+                        <a href="#" class="list-group-item list-group-item-action">용산구</a>
+                        <a href="#" class="list-group-item list-group-item-action">중구</a>
+                        <a href="#" class="list-group-item list-group-item-action">강남구</a>
+                        <a href="#" class="list-group-item list-group-item-action">강서구</a>
+                        <a href="#" class="list-group-item list-group-item-action">구로구</a>
+                        <a href="#" class="list-group-item list-group-item-action">도봉구</a>
+                        <a href="#" class="list-group-item list-group-item-action">마포구</a>
+                      </div>
+                 </div>
+                </div>
+            </div>
+            </div>
+
+            <div class="accordion-item">
+            <h2 class="accordion-header" id="regionHead2">
+                <button class="accordion-button collapsed text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#regionCollapse2" aria-expanded="false" aria-controls="regionCollapse2">
+                경기
+                </button>
+            </h2>
+            <div id="regionCollapse2" class="accordion-collapse collapse" aria-labelledby="regionHead2" data-bs-parent="#regionAccordion">
+                <div class="accordion-body">
+                <div data-spy="scroll" data-target="#regionHead2" data-offset="10"
+                    style="height:200px;overflow-y: scroll;padding:5px; border: 1px solid #8ea58e;">
+                    <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action">강북구</a>
+                    <a href="#" class="list-group-item list-group-item-action">광진구</a>
+                    <a href="#" class="list-group-item list-group-item-action">노원구</a>
+                    <a href="#" class="list-group-item list-group-item-action">동작구</a>
+                    <a href="#" class="list-group-item list-group-item-action">서초구</a>
+                    <a href="#" class="list-group-item list-group-item-action">송파구</a>
+                    <a href="#" class="list-group-item list-group-item-action">용산구</a>
+                    <a href="#" class="list-group-item list-group-item-action">중구</a>
+                    <a href="#" class="list-group-item list-group-item-action">강남구</a>
+                    <a href="#" class="list-group-item list-group-item-action">강서구</a>
+                    <a href="#" class="list-group-item list-group-item-action">구로구</a>
+                    <a href="#" class="list-group-item list-group-item-action">도봉구</a>
+                    <a href="#" class="list-group-item list-group-item-action">마포구</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+
+            <div class="accordion-item">
+            <h2 class="accordion-header" id="regionHead3">
+                <button class="accordion-button collapsed text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#regionCollapse3" aria-expanded="false" aria-controls="regionCollapse3">
+                인천
+                </button>
+            </h2>
+            <div id="regionCollapse3" class="accordion-collapse collapse" aria-labelledby="regionHead3" data-bs-parent="#regionAccordion">
+                <div class="accordion-body">
+                    <div data-spy="scroll" data-target="#regionHead3" data-offset="10"
+                    style="height:200px;overflow-y: scroll;padding:5px; border: 1px solid #8ea58e;"> 
+
+                    <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action">광진구</a>
+                    <a href="#" class="list-group-item list-group-item-action">노원구</a>
+                    <a href="#" class="list-group-item list-group-item-action">동작구</a>
+                    <a href="#" class="list-group-item list-group-item-action">서초구</a>
+                    <a href="#" class="list-group-item list-group-item-action">송파구</a>
+                    <a href="#" class="list-group-item list-group-item-action">용산구</a>
+                    <a href="#" class="list-group-item list-group-item-action">중구</a>
+                    <a href="#" class="list-group-item list-group-item-action">강남구</a>
+                    <a href="#" class="list-group-item list-group-item-action">강서구</a>
+                    <a href="#" class="list-group-item list-group-item-action">구로구</a>
+                    <a href="#" class="list-group-item list-group-item-action">도봉구</a>
+                    <a href="#" class="list-group-item list-group-item-action">마포구</a>
+                </div>
+                </div>
+            </div>
+            </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="regionHead4">
+                <button class="accordion-button collapsed text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#regionCollapse4" aria-expanded="false" aria-controls="regionCollapse4">
+                부산
+                </button>
+                </h2>
+                <div id="regionCollapse4" class="accordion-collapse collapse" aria-labelledby="regionHead4" data-bs-parent="#regionAccordion">
+                <div class="accordion-body">
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action">광진구</a>
+                        <a href="#" class="list-group-item list-group-item-action">노원구</a>
+                        <a href="#" class="list-group-item list-group-item-action">동작구</a>
+                        <a href="#" class="list-group-item list-group-item-action">서초구</a>
+                        <a href="#" class="list-group-item list-group-item-action">송파구</a>
+                        <a href="#" class="list-group-item list-group-item-action">용산구</a>
+                        <a href="#" class="list-group-item list-group-item-action">중구</a>
+                        <a href="#" class="list-group-item list-group-item-action">강남구</a>
+                        <a href="#" class="list-group-item list-group-item-action">강서구</a>
+                        <a href="#" class="list-group-item list-group-item-action">구로구</a>
+                        <a href="#" class="list-group-item list-group-item-action">도봉구</a>
+                        <a href="#" class="list-group-item list-group-item-action">마포구</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="regionHead5">
+                <button class="accordion-button collapsed text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#regionCollapse5" aria-expanded="false" aria-controls="regionCollapse5">
+                대구
+                </button>
+                </h2>
+                <div id="regionCollapse5" class="accordion-collapse collapse" aria-labelledby="regionHead5" data-bs-parent="#regionAccordion">
+                <div class="accordion-body">
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action">광진구</a>
+                        <a href="#" class="list-group-item list-group-item-action">노원구</a>
+                        <a href="#" class="list-group-item list-group-item-action">동작구</a>
+                        <a href="#" class="list-group-item list-group-item-action">서초구</a>
+                        <a href="#" class="list-group-item list-group-item-action">송파구</a>
+                        <a href="#" class="list-group-item list-group-item-action">용산구</a>
+                        <a href="#" class="list-group-item list-group-item-action">중구</a>
+                        <a href="#" class="list-group-item list-group-item-action">강남구</a>
+                        <a href="#" class="list-group-item list-group-item-action">강서구</a>
+                        <a href="#" class="list-group-item list-group-item-action">구로구</a>
+                        <a href="#" class="list-group-item list-group-item-action">도봉구</a>
+                        <a href="#" class="list-group-item list-group-item-action">마포구</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="regionHead6">
+                <button class="accordion-button collapsed text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#regionCollapse6" aria-expanded="false" aria-controls="regionCollapse6">
+                광주
+                </button>
+                </h2>
+                <div id="regionCollapse6" class="accordion-collapse collapse" aria-labelledby="regionHead6" data-bs-parent="#regionAccordion">
+                <div class="accordion-body">
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action">광진구</a>
+                        <a href="#" class="list-group-item list-group-item-action">노원구</a>
+                        <a href="#" class="list-group-item list-group-item-action">동작구</a>
+                        <a href="#" class="list-group-item list-group-item-action">서초구</a>
+                        <a href="#" class="list-group-item list-group-item-action">송파구</a>
+                        <a href="#" class="list-group-item list-group-item-action">용산구</a>
+                        <a href="#" class="list-group-item list-group-item-action">중구</a>
+                        <a href="#" class="list-group-item list-group-item-action">강남구</a>
+                        <a href="#" class="list-group-item list-group-item-action">강서구</a>
+                        <a href="#" class="list-group-item list-group-item-action">구로구</a>
+                        <a href="#" class="list-group-item list-group-item-action">도봉구</a>
+                        <a href="#" class="list-group-item list-group-item-action">마포구</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="regionHead7">
+                <button class="accordion-button collapsed text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#regionCollapse7" aria-expanded="false" aria-controls="regionCollapse7">
+                대전
+                </button>
+                </h2>
+                <div id="regionCollapse7" class="accordion-collapse collapse" aria-labelledby="regionHead7" data-bs-parent="#regionAccordion">
+                <div class="accordion-body">
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action">광진구</a>
+                        <a href="#" class="list-group-item list-group-item-action">노원구</a>
+                        <a href="#" class="list-group-item list-group-item-action">동작구</a>
+                        <a href="#" class="list-group-item list-group-item-action">서초구</a>
+                        <a href="#" class="list-group-item list-group-item-action">송파구</a>
+                        <a href="#" class="list-group-item list-group-item-action">용산구</a>
+                        <a href="#" class="list-group-item list-group-item-action">중구</a>
+                        <a href="#" class="list-group-item list-group-item-action">강남구</a>
+                        <a href="#" class="list-group-item list-group-item-action">강서구</a>
+                        <a href="#" class="list-group-item list-group-item-action">구로구</a>
+                        <a href="#" class="list-group-item list-group-item-action">도봉구</a>
+                        <a href="#" class="list-group-item list-group-item-action">마포구</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="regionHead8">
+                <button class="accordion-button collapsed text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#regionCollapse8" aria-expanded="false" aria-controls="regionCollapse8">
+                울산
+                </button>
+                </h2>
+                <div id="regionCollapse8" class="accordion-collapse collapse" aria-labelledby="regionHead8" data-bs-parent="#regionAccordion">
+                <div class="accordion-body">
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action">광진구</a>
+                        <a href="#" class="list-group-item list-group-item-action">노원구</a>
+                        <a href="#" class="list-group-item list-group-item-action">동작구</a>
+                        <a href="#" class="list-group-item list-group-item-action">서초구</a>
+                        <a href="#" class="list-group-item list-group-item-action">송파구</a>
+                        <a href="#" class="list-group-item list-group-item-action">용산구</a>
+                        <a href="#" class="list-group-item list-group-item-action">중구</a>
+                        <a href="#" class="list-group-item list-group-item-action">강남구</a>
+                        <a href="#" class="list-group-item list-group-item-action">강서구</a>
+                        <a href="#" class="list-group-item list-group-item-action">구로구</a>
+                        <a href="#" class="list-group-item list-group-item-action">도봉구</a>
+                        <a href="#" class="list-group-item list-group-item-action">마포구</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="regionHead9">
+                <button class="accordion-button collapsed text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#regionCollapse9" aria-expanded="false" aria-controls="regionCollapse9">
+                세종
+                </button>
+                </h2>
+                <div id="regionCollapse9" class="accordion-collapse collapse" aria-labelledby="regionHead9" data-bs-parent="#regionAccordion">
+                <div class="accordion-body">
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action">광진구</a>
+                        <a href="#" class="list-group-item list-group-item-action">노원구</a>
+                        <a href="#" class="list-group-item list-group-item-action">동작구</a>
+                        <a href="#" class="list-group-item list-group-item-action">서초구</a>
+                        <a href="#" class="list-group-item list-group-item-action">송파구</a>
+                        <a href="#" class="list-group-item list-group-item-action">용산구</a>
+                        <a href="#" class="list-group-item list-group-item-action">중구</a>
+                        <a href="#" class="list-group-item list-group-item-action">강남구</a>
+                        <a href="#" class="list-group-item list-group-item-action">강서구</a>
+                        <a href="#" class="list-group-item list-group-item-action">구로구</a>
+                        <a href="#" class="list-group-item list-group-item-action">도봉구</a>
+                        <a href="#" class="list-group-item list-group-item-action">마포구</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="regionHead10">
+                <button class="accordion-button collapsed text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#regionCollapse10" aria-expanded="false" aria-controls="regionCollapse10">
+                강원
+                </button>
+                </h2>
+                <div id="regionCollapse10" class="accordion-collapse collapse" aria-labelledby="regionHead10" data-bs-parent="#regionAccordion">
+                <div class="accordion-body">
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action">광진구</a>
+                        <a href="#" class="list-group-item list-group-item-action">노원구</a>
+                        <a href="#" class="list-group-item list-group-item-action">동작구</a>
+                        <a href="#" class="list-group-item list-group-item-action">서초구</a>
+                        <a href="#" class="list-group-item list-group-item-action">송파구</a>
+                        <a href="#" class="list-group-item list-group-item-action">용산구</a>
+                        <a href="#" class="list-group-item list-group-item-action">중구</a>
+                        <a href="#" class="list-group-item list-group-item-action">강남구</a>
+                        <a href="#" class="list-group-item list-group-item-action">강서구</a>
+                        <a href="#" class="list-group-item list-group-item-action">구로구</a>
+                        <a href="#" class="list-group-item list-group-item-action">도봉구</a>
+                        <a href="#" class="list-group-item list-group-item-action">마포구</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="regionHead11">
+                <button class="accordion-button collapsed text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#regionCollapse11" aria-expanded="false" aria-controls="regionCollapse11">
+                경남
+                </button>
+                </h2>
+                <div id="regionCollapse11" class="accordion-collapse collapse" aria-labelledby="regionHead11" data-bs-parent="#regionAccordion">
+                <div class="accordion-body">
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action">광진구</a>
+                        <a href="#" class="list-group-item list-group-item-action">노원구</a>
+                        <a href="#" class="list-group-item list-group-item-action">동작구</a>
+                        <a href="#" class="list-group-item list-group-item-action">서초구</a>
+                        <a href="#" class="list-group-item list-group-item-action">송파구</a>
+                        <a href="#" class="list-group-item list-group-item-action">용산구</a>
+                        <a href="#" class="list-group-item list-group-item-action">중구</a>
+                        <a href="#" class="list-group-item list-group-item-action">강남구</a>
+                        <a href="#" class="list-group-item list-group-item-action">강서구</a>
+                        <a href="#" class="list-group-item list-group-item-action">구로구</a>
+                        <a href="#" class="list-group-item list-group-item-action">도봉구</a>
+                        <a href="#" class="list-group-item list-group-item-action">마포구</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="regionHead12">
+                <button class="accordion-button collapsed text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#regionCollapse12" aria-expanded="false" aria-controls="regionCollapse12">
+                경북
+                </button>
+                </h2>
+                <div id="regionCollapse12" class="accordion-collapse collapse" aria-labelledby="regionHead12" data-bs-parent="#regionAccordion">
+                <div class="accordion-body">
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action">광진구</a>
+                        <a href="#" class="list-group-item list-group-item-action">노원구</a>
+                        <a href="#" class="list-group-item list-group-item-action">동작구</a>
+                        <a href="#" class="list-group-item list-group-item-action">서초구</a>
+                        <a href="#" class="list-group-item list-group-item-action">송파구</a>
+                        <a href="#" class="list-group-item list-group-item-action">용산구</a>
+                        <a href="#" class="list-group-item list-group-item-action">중구</a>
+                        <a href="#" class="list-group-item list-group-item-action">강남구</a>
+                        <a href="#" class="list-group-item list-group-item-action">강서구</a>
+                        <a href="#" class="list-group-item list-group-item-action">구로구</a>
+                        <a href="#" class="list-group-item list-group-item-action">도봉구</a>
+                        <a href="#" class="list-group-item list-group-item-action">마포구</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="regionHead13">
+                <button class="accordion-button collapsed text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#regionCollapse13" aria-expanded="false" aria-controls="regionCollapse13">
+                전남
+                </button>
+                </h2>
+                <div id="regionCollapse13" class="accordion-collapse collapse" aria-labelledby="regionHead13" data-bs-parent="#regionAccordion">
+                <div class="accordion-body">
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action">광진구</a>
+                        <a href="#" class="list-group-item list-group-item-action">노원구</a>
+                        <a href="#" class="list-group-item list-group-item-action">동작구</a>
+                        <a href="#" class="list-group-item list-group-item-action">서초구</a>
+                        <a href="#" class="list-group-item list-group-item-action">송파구</a>
+                        <a href="#" class="list-group-item list-group-item-action">용산구</a>
+                        <a href="#" class="list-group-item list-group-item-action">중구</a>
+                        <a href="#" class="list-group-item list-group-item-action">강남구</a>
+                        <a href="#" class="list-group-item list-group-item-action">강서구</a>
+                        <a href="#" class="list-group-item list-group-item-action">구로구</a>
+                        <a href="#" class="list-group-item list-group-item-action">도봉구</a>
+                        <a href="#" class="list-group-item list-group-item-action">마포구</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="regionHead14">
+                <button class="accordion-button collapsed text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#regionCollapse14" aria-expanded="false" aria-controls="regionCollapse14">
+                전북
+                </button>
+                </h2>
+                <div id="regionCollapse14" class="accordion-collapse collapse" aria-labelledby="regionHead14" data-bs-parent="#regionAccordion">
+                <div class="accordion-body">
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action">광진구</a>
+                        <a href="#" class="list-group-item list-group-item-action">노원구</a>
+                        <a href="#" class="list-group-item list-group-item-action">동작구</a>
+                        <a href="#" class="list-group-item list-group-item-action">서초구</a>
+                        <a href="#" class="list-group-item list-group-item-action">송파구</a>
+                        <a href="#" class="list-group-item list-group-item-action">용산구</a>
+                        <a href="#" class="list-group-item list-group-item-action">중구</a>
+                        <a href="#" class="list-group-item list-group-item-action">강남구</a>
+                        <a href="#" class="list-group-item list-group-item-action">강서구</a>
+                        <a href="#" class="list-group-item list-group-item-action">구로구</a>
+                        <a href="#" class="list-group-item list-group-item-action">도봉구</a>
+                        <a href="#" class="list-group-item list-group-item-action">마포구</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="regionHead15">
+                <button class="accordion-button collapsed text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#regionCollapse15" aria-expanded="false" aria-controls="regionCollapse15">
+                충남
+                </button>
+                </h2>
+                <div id="regionCollapse15" class="accordion-collapse collapse" aria-labelledby="regionHead15" data-bs-parent="#regionAccordion">
+                <div class="accordion-body">
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action">광진구</a>
+                        <a href="#" class="list-group-item list-group-item-action">노원구</a>
+                        <a href="#" class="list-group-item list-group-item-action">동작구</a>
+                        <a href="#" class="list-group-item list-group-item-action">서초구</a>
+                        <a href="#" class="list-group-item list-group-item-action">송파구</a>
+                        <a href="#" class="list-group-item list-group-item-action">용산구</a>
+                        <a href="#" class="list-group-item list-group-item-action">중구</a>
+                        <a href="#" class="list-group-item list-group-item-action">강남구</a>
+                        <a href="#" class="list-group-item list-group-item-action">강서구</a>
+                        <a href="#" class="list-group-item list-group-item-action">구로구</a>
+                        <a href="#" class="list-group-item list-group-item-action">도봉구</a>
+                        <a href="#" class="list-group-item list-group-item-action">마포구</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="regionHead16">
+                <button class="accordion-button collapsed text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#regionCollapse16" aria-expanded="false" aria-controls="regionCollapse16">
+                충북
+                </button>
+                </h2>
+                <div id="regionCollapse16" class="accordion-collapse collapse" aria-labelledby="regionHead16" data-bs-parent="#regionAccordion">
+                <div class="accordion-body">
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action">광진구</a>
+                        <a href="#" class="list-group-item list-group-item-action">노원구</a>
+                        <a href="#" class="list-group-item list-group-item-action">동작구</a>
+                        <a href="#" class="list-group-item list-group-item-action">서초구</a>
+                        <a href="#" class="list-group-item list-group-item-action">송파구</a>
+                        <a href="#" class="list-group-item list-group-item-action">용산구</a>
+                        <a href="#" class="list-group-item list-group-item-action">중구</a>
+                        <a href="#" class="list-group-item list-group-item-action">강남구</a>
+                        <a href="#" class="list-group-item list-group-item-action">강서구</a>
+                        <a href="#" class="list-group-item list-group-item-action">구로구</a>
+                        <a href="#" class="list-group-item list-group-item-action">도봉구</a>
+                        <a href="#" class="list-group-item list-group-item-action">마포구</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="regionHead17">
+                <button class="accordion-button collapsed text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#regionCollapse17" aria-expanded="false" aria-controls="regionCollapse17">
+                제주
+                </button>
+                </h2>
+                <div id="regionCollapse17" class="accordion-collapse collapse" aria-labelledby="regionHead17" data-bs-parent="#regionAccordion">
+                <div class="accordion-body">
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action">광진구</a>
+                        <a href="#" class="list-group-item list-group-item-action">노원구</a>
+                        <a href="#" class="list-group-item list-group-item-action">동작구</a>
+                        <a href="#" class="list-group-item list-group-item-action">서초구</a>
+                        <a href="#" class="list-group-item list-group-item-action">송파구</a>
+                        <a href="#" class="list-group-item list-group-item-action">용산구</a>
+                        <a href="#" class="list-group-item list-group-item-action">중구</a>
+                        <a href="#" class="list-group-item list-group-item-action">강남구</a>
+                        <a href="#" class="list-group-item list-group-item-action">강서구</a>
+                        <a href="#" class="list-group-item list-group-item-action">구로구</a>
+                        <a href="#" class="list-group-item list-group-item-action">도봉구</a>
+                        <a href="#" class="list-group-item list-group-item-action">마포구</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+        <div>
+            <p id="choose">
+                <strong>2. 직무를 선택해주세요.</strong>
+            </p>
+        </div>
+
+
+        <div class="accordion" id="jobAccordion">
+            <div class="accordion-item">
+            <h2 class="accordion-header" id="jobHead1">
+                <button class="accordion-button text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#jobCollapse1" aria-expanded="true" aria-controls="jobCollapse1">
+                매장관리/판매
+                </button>
+            </h2>
+            <div id="jobCollapse1" class="accordion-collapse collapse show " aria-labelledby="jobHead1" data-bs-parent="#jobAccordion">
+                <div class="accordion-body">
+                    <div data-spy="scroll" data-target="#jobHead1" data-offset="10"
+                    style="height:200px;overflow-y: scroll;padding:5px; border: 1px solid #8ea58e;">
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action">판촉도우미</a>
+                        <a href="#" class="list-group-item list-group-item-action">카운터</a>
+                        <a href="#" class="list-group-item list-group-item-action">편의점</a>
+                        <a href="#" class="list-group-item list-group-item-action">헬스스토어</a>
+                        <a href="#" class="list-group-item list-group-item-action">생활용품샵</a>
+                        <a href="#" class="list-group-item list-group-item-action">서점 문구</a>
+                        <a href="#" class="list-group-item list-group-item-action">백화점 쇼핑몰</a>
+                        <a href="#" class="list-group-item list-group-item-action">약국</a>
+                        <a href="#" class="list-group-item list-group-item-action">전자기기 매장</a>
+                        <a href="#" class="list-group-item list-group-item-action">PC방</a>
+                        <a href="#" class="list-group-item list-group-item-action">고속도로 휴게소</a>
+                        <a href="#" class="list-group-item list-group-item-action">기타</a>
+                        
+                      </div>
+                 </div>
+                </div>
+            </div>
+            </div>
+
+            <div class="accordion-item">
+            <h2 class="accordion-header" id="jobHead2">
+                <button class="accordion-button collapsed text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#jobCollapse2" aria-expanded="false" aria-controls="jobCollapse2">
+                서비스
+                </button>
+            </h2>
+            <div id="jobCollapse2" class="accordion-collapse collapse" aria-labelledby="jobHead2" data-bs-parent="#jobAccordion">
+                <div class="accordion-body">
+                <div data-spy="scroll" data-target="#jobHead2" data-offset="10"
+                    style="height:200px;overflow-y: scroll;padding:5px; border: 1px solid #8ea58e;">
+                    <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action">직무1</a>
+                    <a href="#" class="list-group-item list-group-item-action">직무2</a>
+                    <a href="#" class="list-group-item list-group-item-action">직무3</a>
+                    <a href="#" class="list-group-item list-group-item-action">직무4</a>
+                    <a href="#" class="list-group-item list-group-item-action">직무5</a>
+                    <a href="#" class="list-group-item list-group-item-action">직무6</a>
+                    <a href="#" class="list-group-item list-group-item-action">직무7</a>
+                    <a href="#" class="list-group-item list-group-item-action">직무8</a>
+                    <a href="#" class="list-group-item list-group-item-action">직무9</a>
+                </div>
+                </div>
+                </div>
+            </div>
+            </div>
+
+            <div class="accordion-item">
+            <h2 class="accordion-header" id="jobHead3">
+                <button class="accordion-button collapsed text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#jobCollapse3" aria-expanded="false" aria-controls="jobCollapse3">
+                사무직
+                </button>
+            </h2>
+            <div id="jobCollapse3" class="accordion-collapse collapse" aria-labelledby="jobHead3" data-bs-parent="#jobAccordion">
+                <div class="accordion-body">
+                    <div data-spy="scroll" data-target="#regionHead3" data-offset="10"
+                    style="height:200px;overflow-y: scroll;padding:5px; border: 1px solid #8ea58e;">
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action">직무1</a>
+                        <a href="#" class="list-group-item list-group-item-action">직무2</a>
+                        <a href="#" class="list-group-item list-group-item-action">직무3</a>
+                        <a href="#" class="list-group-item list-group-item-action">직무4</a>
+                        <a href="#" class="list-group-item list-group-item-action">직무5</a>
+                        <a href="#" class="list-group-item list-group-item-action">직무6</a>
+                        <a href="#" class="list-group-item list-group-item-action">직무7</a>
+                        <a href="#" class="list-group-item list-group-item-action">직무8</a>
+                        <a href="#" class="list-group-item list-group-item-action">직무9</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="jobHead4">
+                <button class="accordion-button collapsed text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#jobCollapse4" aria-expanded="false" aria-controls="jobCollapse4">
+                교육 강사
+                </button>
+                </h2>
+                <div id="jobCollapse4" class="accordion-collapse collapse" aria-labelledby="jobHead4" data-bs-parent="#jobAccordion">
+                <div class="accordion-body">
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action">직무1</a>
+                        <a href="#" class="list-group-item list-group-item-action">직무2</a>
+                        <a href="#" class="list-group-item list-group-item-action">직무3</a>
+                        <a href="#" class="list-group-item list-group-item-action">직무4</a>
+                        <a href="#" class="list-group-item list-group-item-action">직무5</a>
+                        <a href="#" class="list-group-item list-group-item-action">직무6</a>
+                        <a href="#" class="list-group-item list-group-item-action">직무7</a>
+                        <a href="#" class="list-group-item list-group-item-action">직무8</a>
+                        <a href="#" class="list-group-item list-group-item-action">직무9</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="jobHead5">
+                <button class="accordion-button collapsed text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#jobCollapse5" aria-expanded="false" aria-controls="jobCollapse5">
+                운전 배달
+                </button>
+                </h2>
+                <div id="jobCollapse5" class="accordion-collapse collapse" aria-labelledby="jobHead5" data-bs-parent="#jobAccordion">
+                <div class="accordion-body">
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action">직무1</a>
+                        <a href="#" class="list-group-item list-group-item-action">직무2</a>
+                        <a href="#" class="list-group-item list-group-item-action">직무3</a>
+                        <a href="#" class="list-group-item list-group-item-action">직무4</a>
+                        <a href="#" class="list-group-item list-group-item-action">직무5</a>
+                        <a href="#" class="list-group-item list-group-item-action">직무6</a>
+                        <a href="#" class="list-group-item list-group-item-action">직무7</a>
+                        <a href="#" class="list-group-item list-group-item-action">직무8</a>
+                        <a href="#" class="list-group-item list-group-item-action">직무9</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="jobHead6">
+                <button class="accordion-button collapsed text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#jobCollapse6" aria-expanded="false" aria-controls="jobCollapse6">
+                디자인
+                </button>
+                </h2>
+                <div id="jobCollapse6" class="accordion-collapse collapse" aria-labelledby="jobHead6" data-bs-parent="#jobAccordion">
+                <div class="accordion-body">
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action">직무1</a>
+                        <a href="#" class="list-group-item list-group-item-action">직무2</a>
+                        <a href="#" class="list-group-item list-group-item-action">직무3</a>
+                        <a href="#" class="list-group-item list-group-item-action">직무4</a>
+                        <a href="#" class="list-group-item list-group-item-action">직무5</a>
+                        <a href="#" class="list-group-item list-group-item-action">직무6</a>
+                        <a href="#" class="list-group-item list-group-item-action">직무7</a>
+                        <a href="#" class="list-group-item list-group-item-action">직무8</a>
+                        <a href="#" class="list-group-item list-group-item-action">직무9</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="jobHead7">
+                <button class="accordion-button collapsed text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#jobCollapse7" aria-expanded="false" aria-controls="jobCollapse7">
+                외식
+                </button>
+                </h2>
+                <div id="jobCollapse7" class="accordion-collapse collapse" aria-labelledby="jobHead7" data-bs-parent="#jobAccordion">
+                <div class="accordion-body">
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action">직무1</a>
+                        <a href="#" class="list-group-item list-group-item-action">직무2</a>
+                        <a href="#" class="list-group-item list-group-item-action">직무3</a>
+                        <a href="#" class="list-group-item list-group-item-action">직무4</a>
+                        <a href="#" class="list-group-item list-group-item-action">직무5</a>
+                        <a href="#" class="list-group-item list-group-item-action">직무6</a>
+                        <a href="#" class="list-group-item list-group-item-action">직무7</a>
+                        <a href="#" class="list-group-item list-group-item-action">직무8</a>
+                        <a href="#" class="list-group-item list-group-item-action">직무9</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+        <div>
+            <p id="choose">
+                <strong>3. 근무기간 및 고용형태를 선택해주세요.</strong>
+            </p>
+        </div>
+
+
+        <div class="accordion" id="periodAccordion">
+            <div class="accordion-item">
+            <h2 class="accordion-header" id="periodHead1">
+                <button class="accordion-button text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#periodCollapse1" aria-expanded="true" aria-controls="periodCollapse1">
+                근무기간
+                </button>
+            </h2>
+            <div id="periodCollapse1" class="accordion-collapse collapse show " aria-labelledby="periodHead1" data-bs-parent="#periodAccordion">
+                <div class="accordion-body">
+                    <div data-spy="scroll" data-target="#periodHead1" data-offset="10"
+                    style="height:200px;overflow-y: scroll;padding:5px; border: 1px solid #8ea58e;">
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action">하루</a>
+                        <a href="#" class="list-group-item list-group-item-action">1주일 이하</a>
+                        <a href="#" class="list-group-item list-group-item-action">1주일~1개월</a>
+                        <a href="#" class="list-group-item list-group-item-action">1개월~3개월</a>
+                        <a href="#" class="list-group-item list-group-item-action">3개월~6개월</a>
+                        <a href="#" class="list-group-item list-group-item-action">6개월~1년</a>
+                        <a href="#" class="list-group-item list-group-item-action">1년 이상</a>
+                        
+                        
+                      </div>
+                 </div>
+                </div>
+            </div>
+        </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="periodHead2">
+                    <button class="accordion-button collapsed text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#periodCollapse2" aria-expanded="false" aria-controls="periodCollapse2">
+                    근무요일
+                    </button>
+                </h2>
+                <div id="periodCollapse2" class="accordion-collapse collapse " aria-labelledby="periodHead2" data-bs-parent="#periodAccordion">
+                <div class="accordion-body">
+                    <div data-spy="scroll" data-target="#periodHead2" data-offset="10"
+                    style="height:200px;overflow-y: scroll;padding:5px; border: 1px solid #8ea58e;">
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action">월~일</a>
+                        <a href="#" class="list-group-item list-group-item-action">월~금</a>
+                        <a href="#" class="list-group-item list-group-item-action">주말</a>
+                        <a href="#" class="list-group-item list-group-item-action">주6일</a>
+                        <a href="#" class="list-group-item list-group-item-action">주5일</a>
+                        <a href="#" class="list-group-item list-group-item-action">주4일</a>
+                        <a href="#" class="list-group-item list-group-item-action">주3일</a>
+                        <a href="#" class="list-group-item list-group-item-action">주2일</a>
+                        <a href="#" class="list-group-item list-group-item-action">주1일</a>
+                
+                        
+                      </div>
+                 </div>
+                </div>
+            </div>
+        </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="periodHead3">
+                    <button class="accordion-button collapsed text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#periodCollapse3" aria-expanded="false" aria-controls="periodCollapse3">
+                    근무시간
+                    </button>
+                </h2>
+                <div id="periodCollapse3" class="accordion-collapse collapse  " aria-labelledby="periodHead3" data-bs-parent="#periodAccordion">
+                <div class="accordion-body">
+                    <div data-spy="scroll" data-target="#periodHead3" data-offset="10"
+                    style="height:200px;overflow-y: scroll;padding:5px; border: 1px solid #8ea58e;">
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action">오전 파트</a>
+                        <a href="#" class="list-group-item list-group-item-action">오후 파트</a>
+                        <a href="#" class="list-group-item list-group-item-action">저녁 파트</a>
+                        <a href="#" class="list-group-item list-group-item-action">새벽 파트</a>
+                        <a href="#" class="list-group-item list-group-item-action">오전~오후</a>
+                        <a href="#" class="list-group-item list-group-item-action">오후~저녁</a>
+                        <a href="#" class="list-group-item list-group-item-action">저녁~새벽</a>
+                        <a href="#" class="list-group-item list-group-item-action">풀타임</a>
+                        
+                      </div>
+                 </div>
+                </div>
+            </div>
+        </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="periodHead4">
+                    <button class="accordion-button collapsed text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#periodCollapse4" aria-expanded="false" aria-controls="periodCollapse4">
+                    고용 형태 
+                    </button>
+                </h2>
+                <div id="periodCollapse4" class="accordion-collapse collapse  " aria-labelledby="periodHead4" data-bs-parent="#periodAccordion">
+                <div class="accordion-body">
+                    <div data-spy="scroll" data-target="#periodHead4" data-offset="10"
+                    style="height:200px;overflow-y: scroll;padding:5px; border: 1px solid #8ea58e;">
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action">알바</a>
+                        <a href="#" class="list-group-item list-group-item-action">정규직</a>
+                        <a href="#" class="list-group-item list-group-item-action">계약직</a>
+                        <a href="#" class="list-group-item list-group-item-action">파견직</a>
+                        
+                      </div>
+                 </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <footer>
+        <div>
+            <center><button type="button" class="btn"><a href="07_jobsSearched.html">일자리 찾기</a></button></center>
+        </div>
+        </footer>
+    </div>    
+</body>
+</html>

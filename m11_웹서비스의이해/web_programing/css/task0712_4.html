@@ -1,0 +1,51 @@
+<!-- 후손 선택자와 자손 선택자를 생성하여 스타일을 적용하여 구현하고 그 차이를 확인하세요. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        #n1 td > a {color: white;
+        background-color: #363062;
+        font-weight: bold;
+        width: 100px; height: 100px;
+        }
+        /* #n1 td > div > a {padding:20px 20px}  */
+
+        #n2 td > a {color: white;
+        background-color: #4D4C7D;
+        font-weight: bold;
+        width: 100px; height: 100px;}
+
+        #n3 td > a {color: white;
+        background-color: #827397;
+        font-weight: bold;
+        width: 100px; height: 100px;}
+    </style>
+</head>
+<body>
+    <center>
+        <h1>yjh news</h1>
+        <table>
+
+            <tr id="n1">
+                 <td><a href="https://n.news.naver.com/mnews/article/081/0003286704?sid=100">정치</a></td>
+                 <td><a href="https://n.news.naver.com/mnews/article/003/0011300696?sid=101">경제</a></td>
+                 <td><a href="https://n.news.naver.com/mnews/article/081/0003286686?sid=102">사회</a></td>
+            </tr>      
+
+            <tr id="n2">
+                 <td><a href="https://n.news.naver.com/mnews/article/052/0001763274?sid=103">생활/문화</a></td>
+                 <td><a href="https://n.news.naver.com/mnews/article/003/0011300634?sid=105">IT/과학</a></td>
+                 <td><a href="https://n.news.naver.com/mnews/article/003/0011298651?sid=104">세계</a></td>
+            </tr>
+
+            <tr id="n3">
+                 <td><a href="https://n.news.naver.com/mnews/article/015/0004723503?sid=110">오늘의사설</a></td>
+                 <td><a href="https://n.news.naver.com/mnews/article/008/0004770033?sid=110">오늘의칼럼</a></td>
+                 <td><a href="https://news.naver.com/main/ranking/popularDay.naver?mid=etc&sid1=111">랭킹</a></td>
+            </tr>
+
+        </table>
+    </center>
+</body>
+</html>

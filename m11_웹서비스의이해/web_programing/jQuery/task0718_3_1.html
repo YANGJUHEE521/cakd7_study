@@ -1,0 +1,31 @@
+<!-- event 연결을 두 가지 방법으로 수행하여 작성 및 결과 출력하세요. cf) p.388~389 -->
+<!-- 첫번째 방법 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+    <script src = 'https://code.jquery.com/jquery-3.4.1.js'></script>
+    <script>
+        $(document).ready(function() {
+            // 글자 태그는 대체 왜 안되는걸까 
+            $('#box').css({
+                width : 100, 
+                height:100,
+                background:'cornflowerblue'
+    
+            }).on('click', function(){
+                $(this).css('background','red');
+            }).on('mouseenter', function(){
+                $(this).css('background','blue');
+            }).on('mouseleave', function(){
+                $(this).css('background','orange');
+            });
+           
+        });
+    </script>
+</head>
+<body>
+    <div id = 'box'></div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!-- 미디어 규칙을 적용한 미디어 쿼리를 사용한 사례를 수행하세요. -->
+<!-- https://wisesilver.tistory.com/20 - 모바일 디바이스별 해상도, OS 버전 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        /* 스마트폰
+        @media screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) {
+            body {background-color: goldenrod;}
+            
+        } */
+
+        /* 데스크톱 */
+        @media screen and (min-width:960px) {
+            body {background-color: aqua;}
+        }
+
+        @media print {
+            body {background-color: goldenrod;}
+        }
+
+        img {width: 200px; height: 500px;}
+    </style>
+    <title>미디어 규칙</title>
+</head>
+<body>
+    <h1>장마도 무색 14일 전장연 지하철 4호선 시위 계속...오늘도 출근길?</h1>
+    <p>2022년 장마기간에도 불구하고 전국장애인차별철폐연대(전장연)의 지하철 4호선 선전전이 14일 예고돼 지하철 4호선이 지연될 것으로 보인다.
+
+        지난 13일 서울교통공사는 14일 오전 8시부터 지하철 4호선에서 전국장애인차별철폐연대의 장애인 권리예산 확보를 위한 지하철 타기 선전전이 예정돼 있다고 공지했다.
+        
+        공사는 "이로 인해 4호선 열차운행이 상당시간 지연될 수 있으니 이 점 참고하여 열차를 이용해 주시시 바랍니다"라고 알렸다.
+    </p>
+    <img src="printsuccess.jpg">
+</body>
+</html>

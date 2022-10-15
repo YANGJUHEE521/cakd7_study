@@ -1,0 +1,22 @@
+<!-- 여러분들이 가지고 싶은 멋있는 디지털 시계를 만들어보세요. -->
+<!-- 디자인만 넣어주면 되는것  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Document</title>
+    <script>
+        window.onload = function () {
+            var clock = document.getElementById('clock');
+
+            setInterval(function () {
+                var now = new Date();
+                clock.innerHTML = now.toString();
+            }, 1000);
+        };
+    </script>
+</head>
+<body>
+    <h1 id = 'clock'></h1>
+</body>
+</html>

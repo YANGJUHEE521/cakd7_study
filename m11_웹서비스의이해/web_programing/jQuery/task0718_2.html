@@ -1,0 +1,36 @@
+<!-- 함수를 이용해 스타일 속성을 지정한 사례를 작성하여 출력하세요. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Document</title>
+    <script src = 'https://code.jquery.com/jquery-3.4.1.js'></script>
+    <script>
+        $(document).ready(function() {
+            var output = '';
+
+            for (var i = 0; i < 256; i ++) {
+                output += '<div></div>'
+            }
+
+            document.body.innerHTML = output;
+
+            $('div').css({
+                height : '2px',
+                backgroundColor : function(i) {
+                    return 'rgb(' + (256 - i) +',' + (150 - i) + ',' + i  + ')';
+                }
+            });
+
+
+
+                
+            });
+
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

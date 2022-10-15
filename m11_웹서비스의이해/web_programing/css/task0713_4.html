@@ -1,0 +1,40 @@
+<!-- p.232 코드 7-5에서 "요소의 중앙 배치" 문자를 콘테이너 중앙에 위치하도록 수정하세요. -->
+<!-- 특히 이거 답지 참고하기 !!!!!!!!!!!!!!!!!!!!!!! -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+    <style>
+        * {margin: 0; padding: 0;}
+
+        body {background: red;}
+
+        #container {
+            width: 500px; height: 250px;
+            background: orange;
+
+            position: absolute;
+            left: 50%; top: 50%;
+            margin-left: -250px;
+            margin-top: -125px;
+        }
+
+        #element {
+            width:246.5px; height: 42.67px;
+            position: absolute;
+            left: 50%; top: 50%;
+            margin-left: -123.25px;
+            margin-top: -21.335px;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="element">
+            <h1>요소의 중앙 배치</h1>
+        </div>
+    </div>
+</body>
+</html>

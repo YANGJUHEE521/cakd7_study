@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        var date = new Date();
+
+        var year = date.getFullYear();
+        var month = date.getMonth() + 1;
+     
+        var day = date.getDay();
+
+        var hours = date.getHours();
+        var minutes = date.getMinutes();
+        var seconds = date.getSeconds();
+        
+        if (3 <= month && month <= 5){
+            alert('봄');
+        } else if (6 <= month && month <= 8){
+            alert('여름');
+        } else if (9 <= month && month <= 11){
+            alert('가을');
+        } else {
+            alert('겨울');
+        }
+
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+

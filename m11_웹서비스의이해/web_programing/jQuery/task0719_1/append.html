@@ -1,0 +1,40 @@
+<!-- 교재에 있는 코드를 먼저 해보고(p.420~ 422) -->
+<!-- 문서 객체 추가하기 8개 사례를 작성하여 출력하세요. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>prependTo</title>
+    <script src = 'https://code.jquery.com/jquery-3.4.1.js'></script>
+    <script>
+        
+        // jQuery
+        $(document).ready(function() {
+            $('div').append('<img src="todayweather.JPG">');
+        });
+
+        // 자바스크립트의 타이머 함수를 사용하여 시계 만들기
+        window.onload = function () {
+            var clock = document.getElementById('clock');
+            var div = document.querySelector('div');
+            clock.style.color = 'white';
+            clock.style.background = 'cornflowerblue';
+            div.style.border = '3px solid blue';
+            setInterval(function () {
+                var now = new Date();
+                
+                clock.innerHTML = now.toString();
+            }, 1000);
+
+
+        };
+
+    </script>
+
+</head>
+<body>
+    <div>
+        <h1 id = 'clock'></h1>
+    </div>
+</body>
+</html>
