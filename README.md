@@ -1,3 +1,4 @@
+![Footer](https://capsule-render.vercel.app/api?type=waving&color=auto&height=200&section=footer)
 # CAKD7 : 중앙 K-Digital Training 7기 "빅데이터 기반 AI 응용 솔루션 개발자 전문과정"
 
 ---
